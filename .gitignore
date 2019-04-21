@@ -4,6 +4,6 @@
 out
 
 node_modules
-/elm.json
+elm.json
 
 .DS_Store

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Download all elm-lang packages for offline development.",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/jarri2di/elm-offline-packages.git"
+    "type": "git",
+    "url": "https://github.com/jarri2di/elm-offline-packages.git"
   },
   "main": "src/app.js",
   "scripts": {

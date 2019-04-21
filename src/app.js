@@ -3,6 +3,7 @@ const Nightmare = require('nightmare');
 
 const nightmare = Nightmare({ show: false });
 const url = 'https://package.elm-lang.org';
+const outputFile = 'scripts/elm-packages.txt';
 
 function getUniquePackages(packagesFromHtml) {
   const uniquePackages = [];
@@ -17,7 +18,7 @@ function getUniquePackages(packagesFromHtml) {
 }
 
 function saveToFile(data) {
-  fs.writeFileSync('packages.txt', data);
+  fs.writeFileSync(outputFile, data);
 }
 
 nightmare
@@ -29,7 +30,7 @@ nightmare
     const packagesFromHtml = response.match(/\/packages\/[\w-]+\/[\w-]+/g);
     const uniquePackages = getUniquePackages(packagesFromHtml);
     saveToFile(uniquePackages.toString().replace(/,/g, '\n'));
-    console.log('Package list saved to packages.txt');
+    console.log(`Package list saved to ${outputFile}\n`);
     process.exit();
   })
   .catch(error => {

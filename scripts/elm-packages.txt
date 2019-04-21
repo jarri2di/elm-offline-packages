@@ -106,6 +106,7 @@ Punie/elm-matrix
 Punie/elm-parser-extras
 Punie/elm-reader
 QiTASC/hatchinq
+RalfNorthman/elm-zoom-plot
 RomanErnst/erl
 Skinney/elm-deque
 Skinney/elm-phone-numbers

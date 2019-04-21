@@ -13,5 +13,5 @@ npm install
 npm start
 
 # Download packages and generate zip
-./generate_packages.sh
+./scripts/generate_packages.sh
 ```
