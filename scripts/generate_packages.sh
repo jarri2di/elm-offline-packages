@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Set current working directory
 cd "${0%/*}" || exit
 
@@ -14,6 +16,14 @@ function init() {
     if [[ -d "$elm_dir" ]] ; then
         echo -e "Deleting pre-existing $elm_dir\n"
         rm -rf "$elm_dir"
+    fi
+
+    if [[ -d "src" ]] ; then
+        rm -rf src
+    fi
+
+    if [[ -f "elm.json" ]] ; then
+        rm elm.json
     fi
 
     echo -e "Now attempting to install packages\n"
