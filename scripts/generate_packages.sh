@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 # Set current working directory
 cd "${0%/*}" || exit
 
