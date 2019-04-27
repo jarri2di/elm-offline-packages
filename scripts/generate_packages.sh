@@ -6,7 +6,7 @@ cd "${0%/*}" || exit
 # Set vars
 packages=$(<elm-packages.txt)
 elm_dir=~/.elm
-elm_zip=~elm-packages.tar.gz
+elm_zip=~/elm-packages.tar.gz
 success=1
 
 function init() {
