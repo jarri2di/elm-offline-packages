@@ -5,7 +5,7 @@ cd "${0%/*}" || exit
 
 # Set vars
 packages=$(<elm-packages.txt)
-elm_dir=~/.elm
+elm_dir=~.elm
 elm_zip=~/elm-packages.tar.gz
 success=1
 
@@ -36,7 +36,7 @@ function cleanup() {
 
 function zip_packages() {
     echo -e "Zipping up elm packages\n"
-    cd ~/.elm && tar -czvf ${elm_zip} . && echo -e "Packages saved to $elm_zip\n"
+    cd ~/ && tar czvf ${elm_zip} ${elm_dir} && echo -e "Packages saved to $elm_zip\n"
 }
 
 function install_packages() {

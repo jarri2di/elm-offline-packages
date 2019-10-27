@@ -1,6 +1,6 @@
 {
   "name": "elm-offline-packages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Download all elm-lang packages for offline development.",
   "repository": {
     "type": "git",
@@ -20,14 +20,14 @@
   "author": "jarri2di",
   "license": "ISC",
   "dependencies": {
-    "nightmare": "^3.0.2"
+    "got": "^9.6.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^4.3.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.18.2"
   }
 }

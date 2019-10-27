@@ -1,38 +1,16 @@
 const fs = require('fs');
-const Nightmare = require('nightmare');
+const client = require('got');
+const path = require('path');
 
-const nightmare = Nightmare({ show: false });
-const url = 'https://package.elm-lang.org';
-const outputFile = 'scripts/elm-packages.txt';
+const packagesUrl = 'https://package.elm-lang.org/all-packages';
+const outputFile = '../scripts/elm-packages.txt';
 
-function getUniquePackages(packagesFromHtml) {
-  const uniquePackages = [];
-  packagesFromHtml.sort().forEach(rawPackage => {
-    const sanitizedPackage = rawPackage.replace('/packages/', '');
-    if (uniquePackages.indexOf(sanitizedPackage) < 0) {
-      uniquePackages.push(sanitizedPackage);
-    }
-  });
-
-  return uniquePackages;
-}
-
-function saveToFile(data) {
-  fs.writeFileSync(outputFile, data);
-}
-
-nightmare
-  .goto(url)
-  .wait('body')
-  .evaluate(() => document.querySelector('body > div.center > div.catalog').innerHTML)
-  .end()
-  .then(response => {
-    const packagesFromHtml = response.match(/\/packages\/[\w-]+\/[\w-]+/g);
-    const uniquePackages = getUniquePackages(packagesFromHtml);
-    saveToFile(uniquePackages.toString().replace(/,/g, '\n'));
-    console.log(`Package list saved to ${outputFile}\n`);
-    process.exit();
-  })
-  .catch(error => {
-    console.error(error);
-  });
+(async () => {
+  try {
+    const response = await client.get(packagesUrl, { json: true });
+    const packages = Object.keys(response.body);
+    fs.writeFileSync(path.join(__dirname, outputFile), packages.toString().replace(/,/g, '\n'));
+  } catch (error) {
+    console.log(error);
+  }
+})();
