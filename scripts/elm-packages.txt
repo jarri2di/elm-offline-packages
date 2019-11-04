@@ -307,6 +307,7 @@ YuyaAizawa/list-wrapper
 Zaptic/elm-glob
 Zinggi/elm-2d-game
 Zinggi/elm-game-resources
+Zinggi/elm-glsl-generator
 Zinggi/elm-hash-icon
 Zinggi/elm-obj-loader
 Zinggi/elm-random-general
@@ -468,6 +469,7 @@ bartavelle/json-helpers
 base-dev/elm-graphql-module
 basti1302/elm-human-readable-filesize
 basti1302/elm-non-empty-array
+bburdette/pdf-element
 bburdette/schelme
 bburdette/stl
 bburdette/toop
@@ -572,6 +574,7 @@ ccapndave/elm-update-extra
 ccapndave/focus
 ceddlyburge/elm-bootstrap-starter-master-view
 ceddlyburge/elm-collections
+cedricss/elm-css-systems
 chendrix/elm-matrix
 chendrix/elm-numpad
 chicode/lisa
@@ -901,6 +904,7 @@ folkertdev/elm-brotli
 folkertdev/elm-deque
 folkertdev/elm-flate
 folkertdev/elm-hexbin
+folkertdev/elm-int64
 folkertdev/elm-iris
 folkertdev/elm-kmeans
 folkertdev/elm-paragraph
@@ -1051,6 +1055,7 @@ jackhp95/palit
 jackwillis/elm-dialog
 jahewson/elm-graphql-module
 jamby1100/elm-blog-engine
+jamesgary/elm-config-ui
 jamesmacaulay/elm-graphql
 jamesmacaulay/elm-json-bidirectional
 janjelinek/creditcard-validation
@@ -1578,6 +1583,7 @@ ryan-senn/stellar-elm-sdk
 ryannhg/date-format
 ryannhg/elm-date-format
 ryannhg/elm-moment
+ryannhg/elm-spa
 ryanolsonx/elm-mock-http
 ryanolsonx/elm-time-range
 ryota0624/date-controll
@@ -1702,6 +1708,7 @@ the-sett/auth-elm
 the-sett/decode-generic
 the-sett/elm-aws-core
 the-sett/elm-color
+the-sett/elm-enum
 the-sett/elm-one-many
 the-sett/elm-pretty-printer
 the-sett/elm-serverless

@@ -1,6 +1,6 @@
 {
   "name": "elm-offline-packages",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Download all elm-lang packages for offline development.",
   "repository": {
     "type": "git",

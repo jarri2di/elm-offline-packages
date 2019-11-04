@@ -7,9 +7,11 @@ const outputFile = '../scripts/elm-packages.txt';
 
 (async () => {
   try {
+    console.log('Retrieving list of packages...');
     const response = await client.get(packagesUrl, { json: true });
     const packages = Object.keys(response.body);
     fs.writeFileSync(path.join(__dirname, outputFile), packages.toString().replace(/,/g, '\n'));
+    console.log('Package list has been generated. Ready for installing.');
   } catch (error) {
     console.log(error);
   }

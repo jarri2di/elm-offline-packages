@@ -5,15 +5,12 @@ cd "${0%/*}" || exit
 
 # Set vars
 packages=$(<elm-packages.txt)
-elm_dir=~.elm
-elm_zip=~/elm-packages.tar.gz
+elm_dir=~/.elm
 success=1
 
-function init() {
-    # Start clean
-    if [[ -d "$elm_dir" ]] ; then
-        echo -e "Deleting pre-existing $elm_dir\n"
-        rm -rf "$elm_dir"
+function cleanup() {
+    if [[ -d "elm-stuff" ]] ; then
+        rm -rf elm-stuff
     fi
 
     if [[ -d "src" ]] ; then
@@ -23,20 +20,19 @@ function init() {
     if [[ -f "elm.json" ]] ; then
         rm elm.json
     fi
+}
 
-    echo -e "Now attempting to install packages\n"
+function init() {
+    # Start clean
+    if [[ -d "$elm_dir" ]] ; then
+        echo -e "Deleting pre-existing $elm_dir.\n"
+        rm -rf "$elm_dir"
+    fi
+
+    cleanup
+
+    echo -e "Now attempting to install packages.\n"
     sleep 2
-}
-
-function cleanup() {
-    echo -e "Cleaning up\n"
-    rm -rf src
-    rm elm.json
-}
-
-function zip_packages() {
-    echo -e "Zipping up elm packages\n"
-    cd ~/ && tar czvf ${elm_zip} ${elm_dir} && echo -e "Packages saved to $elm_zip\n"
 }
 
 function install_packages() {
@@ -45,16 +41,14 @@ function install_packages() {
         success=0
         yes | elm init
         yes | elm install "$package"
-        rm -rf src
-        rm elm.json
+        cleanup
     done
 
     if [[ ${success} -eq 0 ]] ; then
-        echo -e "Successfully installed packages...\n"
+        echo -e "Successfully installed elm packages.\n"
         cleanup
-        zip_packages
     else
-        echo -e "Something seems to have gone wrong. No packages were installed\n"
+        echo -e "Something seems to have gone wrong. No packages were installed.\n"
     fi
 }
 

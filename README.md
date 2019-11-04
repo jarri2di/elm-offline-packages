@@ -12,6 +12,10 @@ npm install
 # Refresh packages.txt
 npm start
 
-# Download packages and generate zip
-./scripts/generate_packages.sh
+# Download packages
+cd scripts
+./generate_packages.sh
+
+# Save as tar.gz (optional)
+ cd ~/ && tar czvf elm-packages.tar.gz .elm
 ```
