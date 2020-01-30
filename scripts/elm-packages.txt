@@ -3,6 +3,8 @@
 1602/json-value
 1602/json-viewer
 1hko/elm-truth-table
+2426021684/elm-collage
+2426021684/elm-text-width
 2mol/elm-colormaps
 7hoenix/elm-chess
 AaronCZim/to-elm-format-string
@@ -24,6 +26,7 @@ Bogdanp/elm-time
 Bractlet/elm-plot
 BrianHicks/elm-avl-exploration
 BrianHicks/elm-benchmark
+BrianHicks/elm-css-reset
 BrianHicks/elm-particle
 BrianHicks/elm-string-graphemes
 BrianHicks/elm-trend
@@ -77,6 +80,7 @@ FabienHenon/jsonapi
 FabienHenon/remote-resource
 FordLabs/elm-star-rating
 FranklinChen/elm-tau
+Fresheyeball/deburr
 Fresheyeball/elm-animate-css
 Fresheyeball/elm-font-awesome
 Fresheyeball/elm-function-extra
@@ -117,12 +121,14 @@ Holmusk/elmoji
 Holmusk/swagger-decoder
 HolyMeekrob/elm-font-awesome-5
 InsideSalesOfficial/isdc-elm-ui
+IzumiSy/elm-consistent-hashing
 Janiczek/architecture-test
 Janiczek/browser-extra
 Janiczek/cmd-extra
 Janiczek/color-hcl
 Janiczek/distinct-colors
 Janiczek/elm-architecture-test
+Janiczek/elm-bidict
 Janiczek/elm-encoding
 Janiczek/elm-graph
 Janiczek/elm-runescape
@@ -142,6 +148,7 @@ JonRowe/elm-jwt
 JordyMoos/elm-clockpicker
 JordyMoos/elm-pageloader
 JordyMoos/elm-quiz
+JoshuaHall/elm-fraction
 JulianKniephoff/elm-time-extra
 JustinLove/elm-twitch-api
 JustusAdam/elm-path
@@ -160,7 +167,9 @@ M1chaelTran/elm-graphql
 MacCASOutreach/graphicsvg
 MadonnaMat/elm-select-two
 MartinKavik/elm-combinatorics
+MartinSStewart/elm-bayer-matrix
 MartinSStewart/elm-codec-bytes
+MartinSStewart/elm-nonempty-string
 MattCheely/tryframe-coordinator
 MatthewJohnHeath/elm-fingertree
 MazeChaZer/elm-ckeditor
@@ -216,12 +225,16 @@ NoRedInk/start-app
 NoRedInk/style-elements
 NoRedInk/view-extra
 OldhamMade/elm-charts
+Orange-OpenSource/elm-advanced-grid
 Orasund/elm-action
 Orasund/elm-cellautomata
 Orasund/elm-game-essentials
+Orasund/elm-jsonstore
 Orasund/elm-pair
+Orasund/elm-ui-framework
 Orasund/pixelengine
 PaackEng/elm-alert-beta
+PaackEng/elm-google-maps
 PaackEng/elm-svg-string
 PaackEng/elm-ui-dialog
 PaackEng/elm-ui-dropdown
@@ -267,6 +280,7 @@ SwiftsNamesake/euclidean-space
 SwiftsNamesake/please-focus
 SwiftsNamesake/proper-keyboard
 SylvanSign/elm-pointer-events
+TSFoster/elm-bytes-extra
 TSFoster/elm-compare
 TSFoster/elm-envfile
 TSFoster/elm-heap
@@ -304,6 +318,7 @@ Voronchuk/hexagons
 Warry/elmi-decoder
 WhileTruu/elm-smooth-scroll
 YuyaAizawa/list-wrapper
+YuyaAizawa/peg
 Zaptic/elm-glob
 Zinggi/elm-2d-game
 Zinggi/elm-game-resources
@@ -385,6 +400,7 @@ amazzeo/elm-math-strings
 ambuc/juggling-graph
 amilner42/keyboard-extra
 amitu/elm-formatting
+anatol-1988/measurement
 andre-dietrich/elm-mapbox
 andre-dietrich/elm-random-pcg-regex
 andre-dietrich/elm-random-regex
@@ -438,6 +454,7 @@ athanclark/elm-duration
 athanclark/elm-every
 athanclark/elm-param-parsing-2
 athanclark/elm-threading
+austinshenk/elm-w3
 avh4/burndown-charts
 avh4/elm-beautiful-example
 avh4/elm-color
@@ -484,6 +501,7 @@ bendyworks/elm-action-cable
 benthepoet/elm-purecss
 bernerbrau/elm-css-widgets
 besuikerd/elm-dictset
+bgrosse-midokura/composable-form
 bigbinary/elm-form-field
 bigbinary/elm-reader
 billperegoy/elm-form-validations
@@ -538,17 +556,21 @@ brandly/elm-dot-lang
 brasilikum/is-password-known
 brenden/elm-tree-diagram
 brian-watkins/elm-procedure
+brian-watkins/elm-spec
 brianvanburken/elm-list-date
 brightdb/sequence
 bruz/elm-simple-form-infix
 bundsol/boxed
 burabure/elm-collision
+burnable-tech/elm-ethereum
 bzimmermandev/autogrid
 cacay/elm-void
 cakenggt/elm-net
 calions-app/app-object
+calions-app/env
 calions-app/jsonapi-http
 calions-app/remote-resource
+calions-app/test-attribute
 camjc/elm-chart
 camjc/elm-quiz
 canadaduane/elm-hccb
@@ -561,6 +583,7 @@ carlsson87/mod11
 carpe/elm-data
 carwow/elm-core
 carwow/elm-slider
+carwow/elm-slider-old
 carwow/elm-theme
 ccapndave/elm-eexl
 ccapndave/elm-effects-extra
@@ -575,6 +598,7 @@ ccapndave/focus
 ceddlyburge/elm-bootstrap-starter-master-view
 ceddlyburge/elm-collections
 cedricss/elm-css-systems
+chain-partners/elm-bignum
 chendrix/elm-matrix
 chendrix/elm-numpad
 chicode/lisa
@@ -589,6 +613,7 @@ chrisbuttery/reading-time
 circuithub/elm-array-extra
 circuithub/elm-array-focus
 circuithub/elm-bootstrap-html
+circuithub/elm-dropdown
 circuithub/elm-filepickerio-api-types
 circuithub/elm-function-extra
 circuithub/elm-graphics-shorthand
@@ -633,6 +658,7 @@ damukles/elm-dialog
 danabrams/elm-media
 danabrams/elm-media-source
 danfishgold/base64-bytes
+danhandrea/elm-date-format
 danhandrea/elm-foo
 danielnarey/elm-color-math
 danielnarey/elm-css-basics
@@ -650,9 +676,11 @@ danmarcab/material-icons
 danyx23/elm-dropzone
 danyx23/elm-mimetype
 danyx23/elm-uuid
+dasch/crockford
 dasch/elm-basics-extra
 dasch/levenshtein
 dasch/parser
+data-viz-lab/elm-chart-builder
 davcamer/elm-protobuf
 davidpelaez/elm-scenic
 dawehner/elm-colorbrewer
@@ -670,6 +698,8 @@ dillonkearns/elm-graphql
 dillonkearns/elm-markdown
 dillonkearns/elm-oembed
 dillonkearns/elm-pages
+dillonkearns/elm-rss
+dillonkearns/elm-sitemap
 dillonkearns/graphqelm
 dillonkearns/graphqelm-demo
 dividat/elm-identicon
@@ -840,6 +870,7 @@ ericgj/elm-accordion-menu
 ericgj/elm-autoinput
 ericgj/elm-csv-decode
 ericgj/elm-quantiles
+ericgj/elm-uri-template
 ericgj/elm-validation
 eriktim/elm-protocol-buffers
 erlandsona/assoc-set
@@ -919,6 +950,7 @@ folkertdev/svg-path-lowlevel
 francescortiz/elm-queue
 frandibar/elm-bootstrap
 frandibar/elm-font-awesome-5
+frawa/elm-contour
 fredcy/elm-debouncer
 fredcy/elm-defer-command
 fredcy/elm-parseint
@@ -968,6 +1000,7 @@ gribouille/elm-graphql
 gribouille/elm-prelude
 gribouille/elm-table
 gribouille/elm-treeview
+groteck/elm-iban
 grrinchas/elm-graphql-client
 grrinchas/elm-natural
 guid75/ziplist
@@ -990,6 +1023,7 @@ hecrj/html-parser
 hendore/elm-adorable-avatars
 hendore/elm-port-message
 hendore/elm-temperature
+henne90gen/elm-pandas-visualization
 hercules-ci/elm-dropdown
 hercules-ci/elm-hercules-extras
 hermanverschooten/ip
@@ -1030,10 +1064,12 @@ imeckler/queue
 imeckler/ratio
 imeckler/stage
 imjoehaines/afinn-165-elm
+indicatrix/elm-chartjs-webcomponent
 indicatrix/elm-input-extra
 ingara/elm-asoiaf-api
 inkuzmin/elm-multiselect
 innoave/bounded-number
+insurello/elm-swedish-bank-account-number
 iodevs/elm-history
 iodevs/elm-validate
 iosphere/elm-i18n
@@ -1043,6 +1079,7 @@ iosphere/elm-toast
 ir4y/elm-cursor
 ir4y/elm-dnd
 isaacseymour/deprecated-time
+isberg/elm-ann
 itravel-de/elm-thumbor
 ivadzy/bbase64
 j-panasiuk/elm-ionicons
@@ -1099,6 +1136,7 @@ jinjor/elm-time-travel
 jinjor/elm-transition
 jinjor/elm-xml-parser
 jirichmiel/minimax
+jjagielka/select-menu
 jjant/elm-comonad-zipper
 jjant/elm-dict
 jjant/elm-printf
@@ -1137,7 +1175,9 @@ jordymoos/pilf
 jorgengranseth/elm-string-format
 joshforisha/elm-entities
 joshforisha/elm-html-entities
+joshforisha/elm-inflect
 jouderianjr/elm-dialog
+jouderianjr/elm-loaders
 jpagex/elm-geoip
 jpagex/elm-loader
 jpagex/elm-material-color
@@ -1153,6 +1193,7 @@ jtanguy/moulin-rouge
 jtojnar/elm-json-tape
 juanedi/charty
 justgage/tachyons-elm
+justgook/alt-linear-algebra
 justgook/elm-game-logic
 justgook/elm-image
 justgook/elm-image-encode
@@ -1184,6 +1225,8 @@ jxxcarlson/elm-markdown
 jxxcarlson/elm-pseudorandom
 jxxcarlson/elm-stat
 jxxcarlson/elm-tar
+jxxcarlson/elm-text-editor
+jxxcarlson/elm-typed-time
 jxxcarlson/geometry
 jxxcarlson/graphdisplay
 jxxcarlson/hex
@@ -1245,6 +1288,7 @@ larribas/elm-image-slider
 larribas/elm-multi-email-input
 larribas/elm-multi-input
 laserpants/elm-burrito-update
+laserpants/elm-update-pipeline
 laszlopandy/elm-console
 lattenwald/elm-base64
 lattyware/elm-fontawesome
@@ -1296,6 +1340,7 @@ maca/crdt-replicated-tree
 maksar/elm-function-extra
 maksar/elm-workflow
 malinoff/elm-jwt
+malinoff/elm-uniform
 maorleger/elm-flash
 maorleger/elm-infinite-zipper
 marcosccm/elm-datepicker
@@ -1330,6 +1375,7 @@ mdgriffith/style-elements
 mdgriffith/stylish-elephants
 melon-love/elm-gab-api
 mercurymedia/elm-datetime-picker
+mercurymedia/elm-message-toast
 mercurymedia/elm-smart-select
 mgold/elm-animation
 mgold/elm-date-format
@@ -1397,6 +1443,7 @@ newlandsvalley/elm-abc-parser
 newlandsvalley/elm-binary-base64
 newlandsvalley/elm-comidi
 newmana/chroma-elm
+nicmr/compgeo
 niho/json-schema-form
 niho/personal-number
 nik-garmash/elm-test
@@ -1437,7 +1484,9 @@ opensolid/webgl-math-interop
 opvasger/amr
 orus-io/elm-openid-connect
 overminddl1/program-ex
+owanturist/elm-avl-dict
 owanturist/elm-graphql
+owanturist/elm-queue
 owanturist/elm-union-find
 owanturist/elm-validation
 ozmat/elm-forms
@@ -1448,7 +1497,10 @@ pablohirafuji/elm-char-codepoint
 pablohirafuji/elm-markdown
 pablohirafuji/elm-qrcode
 pablohirafuji/elm-syntax-highlight
+panthershark/email-parser
+panthershark/snackbar
 paramanders/elm-hexagon
+pascallemerrer/elm-advanced-grid
 passiomatic/elm-figma-api
 pastelInc/elm-validator
 patrickjtoy/elm-table
@@ -1457,6 +1509,7 @@ paulcorke/elm-number-format
 paulcorke/elm-string-split
 pd-andy/elm-audio-graph
 pd-andy/elm-web-audio
+pd-andy/tuple-extra
 pdamoc/elm-css
 pdamoc/elm-hashids
 pdamoc/elm-ports-driver
@@ -1469,6 +1522,7 @@ peterszerzo/elm-json-tree-view
 peterszerzo/elm-natural-ui
 peterszerzo/elm-porter
 peterszerzo/line-charts
+phollyer/elm-ui-colors
 pietro909/elm-sticky-header
 pilatch/elm-chess
 pilatch/flip
@@ -1477,6 +1531,7 @@ piotrdubiel/elm-art-in-pi
 powet/elm-funfolding
 poying/elm-router
 poying/elm-style
+prikhi/bootstrap-gallery
 prikhi/decimal
 prikhi/elm-http-builder
 prikhi/http-tasks
@@ -1489,6 +1544,7 @@ primait/pyxis-components
 pristap/smart-text
 pro100filipp/elm-graphql
 proda-ai/elm-dropzone
+proda-ai/elm-logger
 proda-ai/elm-svg-loader
 proda-ai/formatting
 project-fuzzball/node
@@ -1524,11 +1580,13 @@ rhofour/elm-pairing-heap
 ringvold/elm-iso8601-date-strings
 rix501/elm-sortable-table
 rizafahmi/elm-semantic-ui
+rjbma/elm-listview
 rjbma/elm-modal
 rjdestigter/elm-convert-units
 rkrupinski/elm-range-slider
 rl-king/elm-gallery
 rl-king/elm-inview
+rl-king/elm-masonry
 rl-king/elm-modular-scale
 rluiten/elm-date-extra
 rluiten/elm-text-search
@@ -1544,6 +1602,7 @@ roSievers/font-awesome
 robertjlooby/elm-draggable-form
 robertjlooby/elm-generic-dict
 robinpokorny/elm-brainfuck
+robotmay/s3-direct-file-upload
 robwhitaker/elm-infinite-stream
 robwhitaker/elm-uuid-stream
 robx/elm-edn
@@ -1613,6 +1672,10 @@ sgraf812/elm-stateful
 sh4r3m4n/elm-piano
 shelakel/elm-validate
 shmookey/cmd-extra
+showell/binary-tree-diagram
+showell/dict-dot-dot
+showell/elm-data-util
+showell/meta-elm
 shutej/elm-rpcplus-runtime
 simanaitis/elm-mdl
 simonewebdesign/elm-timer
@@ -1631,6 +1694,7 @@ slashmili/phoenix-socket
 smurfix/elm-dict-tree-zipper
 soenkehahn/elm-operational
 soenkehahn/elm-operational-mocks
+solcates/elm-openid-connect
 spect88/romkan-elm
 splodingsocks/elm-add-import
 splodingsocks/elm-easy-events
@@ -1706,11 +1770,15 @@ thaterikperson/elm-strftime
 the-sett/ai-search
 the-sett/auth-elm
 the-sett/decode-generic
+the-sett/elm-auth
+the-sett/elm-auth-aws
+the-sett/elm-aws-cognito
 the-sett/elm-aws-core
 the-sett/elm-color
 the-sett/elm-enum
 the-sett/elm-one-many
 the-sett/elm-pretty-printer
+the-sett/elm-refine
 the-sett/elm-serverless
 the-sett/elm-state-machines
 the-sett/elm-string-case
@@ -1744,6 +1812,7 @@ toastal/trinary
 tomjkidd/elm-multiway-tree-zipper
 torgeir/elm-github-events
 torreyatcitty/the-best-decimal
+tortis/elm-sat
 tortus/elm-array-2d
 treffynnon/elm-tfn
 tricycle/elm-email
@@ -1791,12 +1860,16 @@ vipentti/elm-dispatch
 visotype/elm-dom
 visotype/elm-eval
 vito/elm-ansi
+vjrasane/elm-dynamic-json
 vmchale/elm-composition
 volumeint/screen-overlay
 volumeint/sortable-table
 w0rm/elm-physics
 w0rm/elm-slice-show
 waratuman/elm-coder
+waratuman/elm-json-extra
+waratuman/elm-standardapi
+waratuman/json-extra
 waratuman/time-extra
 warry/ascii-table
 wearsunscreen/gen-garden
@@ -1810,6 +1883,7 @@ will-clarke/elm-tiled-map
 williamwhitacre/elm-encoding
 williamwhitacre/elm-lexer
 williamwhitacre/pylon
+wingyplus/thai-citizen-id
 wintvelt/elm-print-any
 wittjosiah/elm-alerts
 wittjosiah/elm-ordered-dict
@@ -1838,6 +1912,8 @@ yotamDvir/elm-katex
 yotamDvir/elm-pivot
 yumlonne/elm-japanese-calendar
 z5h/component-result
+z5h/jaro-winkler
+z5h/zipper
 zaboco/elm-draggable
 zaidan/elm-collision
 zaidan/elm-gridbox
