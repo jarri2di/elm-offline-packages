@@ -19,8 +19,9 @@
   ],
   "author": "jarri2di",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
-    "got": "^9.6.0"
+    "got": "^12.1.0"
   },
   "devDependencies": {
     "eslint": "^8.5.0",
